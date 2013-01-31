@@ -37,19 +37,14 @@ public class ServerBoard extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // get the message from the text view
-               /* String messageText = message.getText();
+                String messageText = message.getText();
                 // add message to the message area
                 messagesArea.append("\n" + messageText);
                 // send the message to the client
                 mServer.sendMessage(messageText);
                 // clear text
-                message.setText("");*/
-            	//sendButton.setEnabled(false);
-                  for(int ii=0;ii<100;ii++)
-                  {
-                  	double num = Math.random();
-                  	mServer.sendMessage(Double.toString(num));
-                  }
+                message.setText("");
+            	sendButton.setEnabled(false);                 
             }
         });
  
