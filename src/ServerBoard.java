@@ -43,8 +43,7 @@ public class ServerBoard extends JFrame {
                 // send the message to the client
                 mServer.sendMessage(messageText);
                 // clear text
-                message.setText("");
-            	sendButton.setEnabled(false);                 
+                message.setText("");            	               
             }
         });
  
