@@ -43,7 +43,12 @@ public class ServerBoard extends JFrame {
                 // send the message to the client
                 mServer.sendMessage(messageText);
                 // clear text
-                message.setText("");            	               
+                for(int ii=0;ii<10;ii++)
+                {
+                	double value = Math.random()*100-50;
+                	mServer.sendMessage(Integer.toString(ii) + ": " + Double.toString(value));
+                	message.setText("");
+                }                
             }
         });
  
